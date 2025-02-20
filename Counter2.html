@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: x;  
+        }
+        h2{
+            counter-reset: y;
+        }
+        h2::before{
+             counter-increment: x 1;
+             content: "Section " counter(x) ":"; 
+        }
+        h3::before{
+             counter-increment: y 1;
+             content: counter(x) "." counter(y) ":"; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Food</h2>
+     <h3>Pizza</h3>
+     <h3>Burger</h3>
+     <h3>Noodles</h3>
+
+    <h2>Drinks</h2>
+     <h3>Pepsi</h3>
+     <h3>Coca cola</h3>
+     <h3>Sprite</h3>
+
+
+</body>
+</html>
