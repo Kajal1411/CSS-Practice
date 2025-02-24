@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip
+        {
+            position: relative;
+            display: inline-block;    
+            border-bottom: 1px dotted palevioletred;    
+        }
+        .tooltip .tooltiptext
+        {
+            position: absolute;
+            background-color: aqua;
+            color: brown;
+            visibility: hidden;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            width: 120px;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip:hover .tooltiptext
+        {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <p>Move the mouse over the text below</p>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">This is tooltip text</span>
+    </div>
+</body>
+</html>
