@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotateAll</title>
+    <style>
+        #cover{
+            border: 2px solid rgb(23, 1, 1);
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            
+        }
+        #content{
+            height: 200px;
+            width: 200px;
+            transform:perspective(800px) rotate3D(50,0,0,30deg);
+            background-color: palevioletred;
+            
+        }
+        #cover1{
+            border: 2px solid rgb(23, 1, 1);
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            
+        }
+        #content1{
+            height: 200px;
+            width: 200px;
+            transform:perspective(800px) rotate3D(0,50,0,30deg);
+            background-color: palevioletred;
+            
+        }
+        #cover2{
+            border: 2px solid rgb(23, 1, 1);
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            
+        }
+        #content2{
+            height: 200px;
+            width: 200px;
+            transform:perspective(800px) rotate3D(0,0,50,30deg);
+            background-color: palevioletred;
+            
+        }
+        #cover3{
+            border: 2px solid rgb(23, 1, 1);
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            
+        }
+        #content3{
+            height: 200px;
+            width: 200px;
+            transform:perspective(800px) rotate3D(50,50,50,50deg);
+            background-color: palevioletred;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="cover">
+        <div id="content"></div>
+    </div>
+    <div id="cover1">
+        <div id="content1"></div>
+    </div>
+    <div id="cover2">
+        <div id="content2"></div>
+    </div>
+    <div id="cover3">
+        <div id="content3"></div>
+    </div>
+</body>
+</html>
